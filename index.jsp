@@ -4,8 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>akForum</title>
+	<style type="text/css">
+		
+	</style>
 </head>
-<body>
+<body background="image/bgPicture.jpg">
 	<div align="middle">
 		<h1>Welcome</h1>
 	</div>
