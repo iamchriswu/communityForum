@@ -14,6 +14,7 @@ try{
 }catch(Exception e){}
 
 if(find) {
+	session.setAttribute("name", userName);
 	response.sendRedirect("index.jsp");
 } else {
 	response.sendRedirect("login.html");
