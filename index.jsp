@@ -43,7 +43,8 @@
 					<li><a href="index.jsp">Home</a></li>
 					<li><a href="#">Portfolio</a></li>
 					<li><a href="#">Services</a></li>
-					<li><a href="#">Team</a></li>
+					<li><a href="Lines.html">Lines</a></li>
+					<li><a href="point24.jsp">Point24</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
@@ -65,7 +66,7 @@
 			if(session.getAttribute("name") == null) {%>
 				<p>还没有登陆账号？点击<a href="login.html">登陆</a></p>
 			<%}else {%>
-				<p>尊敬的<%=session.getAttribute("name")%>,欢迎访问ak论坛</p>
+				<p>尊敬的<%=session.getAttribute("name")%>,欢迎访问ak论坛<a href="logout.jsp">&nbsp注销</a></p>				
 			<%}
 			%>
 		</div>
