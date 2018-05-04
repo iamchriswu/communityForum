@@ -1,13 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body background="image/bg.jpg">
-	<div align="middle">
+<body>
+	<header id="header">
+		<h1>World Traveling</h1>
+	</header>
+	<section align="middle" id="section" style="margin-left: 20%;height: 1000px;width: 60%">
 		<form action="login.jsp" method="post">
-			<div>用户名 <input type="text" name="userName" placeholder="Please Enter Your Name"></div><br>
+			<div style="margin-top: 50px">用户名 <input type="text" name="userName" placeholder="Please Enter Your Name"></div><br>
 			<div>密&nbsp&nbsp码 <input type="password" name="password"></div><br>
 			<div>
 				<input type="submit" value="登陆">
@@ -17,6 +23,11 @@
 				<p>还没有账号？点击<a href="register.html">注册</a></p>
 			</div>
 		</form>
-	</div>
+	</section>
+	<footer id="footer">
+		<div>
+			<p style="color: black">Copyright © akforum All Rights Reserved. </p>
+		</div>
+	</footer>
 </body>
 </html>
