@@ -5,28 +5,36 @@
 	<title>Login</title>
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/log-reg-css.css">
 
 </head>
 <body>
 	<header id="header">
-		<h1>World Traveling</h1>
+		<div id="Home">
+			<a href="index.jsp">World Traveling</a>
+		</div>
 	</header>
-	<section align="middle" id="section" style="margin-left: 20%;height: 1000px;width: 60%">
+	<div align="middle" id="log-reg-List">
 		<form action="login.jsp" method="post">
-			<div style="margin-top: 50px">用户名 <input type="text" name="userName" placeholder="Please Enter Your Name"></div><br>
-			<div>密&nbsp&nbsp码 <input type="password" name="password"></div><br>
 			<div>
-				<input type="submit" value="登陆">
-				<input type="reset" value="重置">
+				<input id="inputText" type="text" name="userName" placeholder="User">
 			</div>
 			<div>
-				<p>还没有账号？点击<a href="register.html">注册</a></p>
+				<input id="inputText" type="password" name="password" placeholder="Password">
+			</div>
+			<div>
+				<div id="log-reg-btn">
+					<input type="submit" value="LOGIN">
+				</div>
+				<div id="log-reg-a">
+					<a href="register.html">REG.</a></p>
+				</div>
 			</div>
 		</form>
-	</section>
+	</div>
 	<footer id="footer">
 		<div>
-			<p style="color: black">Copyright © akforum All Rights Reserved. </p>
+			<p style="color: black">Copyright © World Traveling All Rights Reserved. </p>
 		</div>
 	</footer>
 </body>

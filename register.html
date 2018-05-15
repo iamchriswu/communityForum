@@ -1,30 +1,43 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Register</title>
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/log-reg-css.css">
 
 </head>
 <body>
 	<header id="header">
-		<h1>World Traveling</h1>
+		<div id="Home">
+			<a href="index.jsp">World Traveling</a>
+		</div>
 	</header>
-	<section align="middle" id="section" style="margin-left: 20%;height: 500px;width: 60%">
+	<div align="middle" id="log-reg-List">
 		<form action="register.jsp" method="post">
-			<div style="margin-top: 50px">用户名 <input type="text" name="userName" placeholder="Please Enter Your Name"></div><br>
-			<div>密&nbsp&nbsp码 <input type="password" name="password"></div><br>
-			<div>密&nbsp&nbsp码 <input type="password" name="rePassword"></div><br>
 			<div>
-				<input type="submit" value="注册">
-				<input type="reset" value="重置">
+				<input id="inputText" type="text" name="userName" placeholder="User">
+			</div>
+			<div>
+				<input id="inputText" type="password" name="password" placeholder="Password">
+			</div>
+			<div>
+				<input id="inputText" type="password" name="rePassword" placeholder="Repassword">
+			</div>
+			<div>
+				<div id="log-reg-btn">
+					<input type="submit" value="REG">
+				</div>
+				<div id="log-reg-a">
+					<a href="login.html">LOG.</a>
+				</div>
 			</div>
 		</form>
-	<section>
+	</div>
 	<footer id="footer">
 		<div>
-			<p style="color: black">Copyright © akforum All Rights Reserved. </p>
+			<p style="color: black">Copyright © World Traveling All Rights Reserved. </p>
 		</div>
 	</footer>
 </body>
