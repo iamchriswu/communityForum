@@ -3,4 +3,38 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>wt.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>wt.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>JDBC_DRIVER</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DB_URL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/wt</param-value>
+    </context-param>
+    <context-param>
+        <param-name>USER</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>PASS</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
 </web-app>

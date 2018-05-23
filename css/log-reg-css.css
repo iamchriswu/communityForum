@@ -3,16 +3,30 @@
 	height: 800px;
 }
 
-#inputText {
-	margin-top: 10px;
-	height: 20px;
-	width: 180px;
+#log-reg-List form {
+	margin-top: 50px;
+}
+
+#log-reg-input input {
+	margin-top: 20px;
+	height: 26px;
+	width: 200px;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom: 1px solid darkcyan;
+	outline: none;
+
+}
+
+#log-reg-btm {
+	margin-top: 20px;
 }
 #log-reg-btn {
 	display: inline;
+	padding: 5px;
 }
 #log-reg-btn input {
-	margin-top: 10px;
 	width: 100px;
     height: 30px;
     background-color: #337ab7;
@@ -25,6 +39,7 @@
 
 #log-reg-a {
 	display: inline;
+	padding: 5px;
 }
 #log-reg-a a {
 	color: #337ab7;

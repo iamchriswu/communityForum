@@ -13,19 +13,40 @@
 		<div id="Home">
 			<a href="index.jsp">World Traveling</a>
 		</div>
+		<div id="options">
+			<ul>
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="Lines.html">Lines</a></li>
+				<li><a href="point24.jsp">Point24</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
 	</header>
+	<div id="search">
+		<div align="middle" id="question">
+			<h1>Have a Question ?</h1>
+		</div>
+		<form action="#">
+			<input  name="search" id="searchPlace" placeholder="Type your search terms here">
+			<input type="submit" id="searchButton" value="search">
+		</form>
+	</div>
 	<div align="middle" id="log-reg-List">
-		<form action="register.jsp" method="post">
-			<div>
-				<input id="inputText" type="text" name="userName" placeholder="User">
+		<form action="register" method="post">
+			<div id="log-reg-input">
+				<div>
+					<input name="userName" placeholder="User">
+				</div>
+				<div>
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				<div>
+					<input type="password" name="rePassword" placeholder="Confirm Password">
+				</div>
 			</div>
-			<div>
-				<input id="inputText" type="password" name="password" placeholder="Password">
-			</div>
-			<div>
-				<input id="inputText" type="password" name="rePassword" placeholder="Repassword">
-			</div>
-			<div>
+			<div id="log-reg-btm">
 				<div id="log-reg-btn">
 					<input type="submit" value="REG">
 				</div>
