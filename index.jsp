@@ -16,7 +16,7 @@
 		<div id="options">
 			<ul>
 				<li><a href="index.jsp">Home</a></li>
-				<li><a href="#">Portfolio</a></li>
+				<li><a href="qrCode.html">Portfolio</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="Lines.html">Lines</a></li>
 				<li><a href="point24.jsp">Point24</a></li>
@@ -28,7 +28,7 @@
 			if(session.getAttribute("name") == null) {%>
 				<a href="login.html">Login</a></p>
 			<%}else {%>
-				<a href="logout.jsp"><%=session.getAttribute("name")%></a>			
+				<a href="logout"><%=session.getAttribute("name")%></a>
 			<%}
 			%>
 		</div>
@@ -37,7 +37,7 @@
 		<div align="middle" id="question">
 			<h1>Have a Question ?</h1>
 		</div>
-		<form action="#">
+		<form action="search">
 			<input  name="search" id="searchPlace" placeholder="Type your search terms here">
 			<input type="submit" id="searchButton" value="search">
 		</form>
