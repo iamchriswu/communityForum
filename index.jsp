@@ -1,9 +1,12 @@
+<%@ page import="wt.dao.CommandDao" %>
+<%@ page import="wt.model.Command" %>
+<%@ page import="java.util.Vector" %>
 <%@page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>akForum</title>
+	<title>World Traveling</title>
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -59,7 +62,7 @@
 			</div>
 		</div>
 		<div class="essay-command">
-			<form action="#" method="post">
+			<form action="command" method="post">
 				<div>
 					<input class="essay-command-inp" name="comment" placeholder="Enter Your Comment">
 					<input class="essay-command-btn" type="submit" value="comment">
@@ -90,6 +93,37 @@
 			</form>
 		</div>
 	</div>
+	<div class="command">
+		<div>
+			<h2>Command Area</h2>
+		</div>
+		<%
+			String DB_USER = application.getInitParameter("USER");
+			String DB_PASS = application.getInitParameter("PASS");
+			CommandDao commandDao = new CommandDao();
+			Vector<Command> commands = commandDao.commands(DB_USER, DB_PASS);
+			int count = 1;
+			for (Command command:commands
+				 ) {
+				out.println("<div>");
+				out.println("<div class=\"command-info-floor\">");
+				out.println("<h3>#" + count + "</h3>");
+				out.println("</div>");
+				out.println("<div class=\"command-info\">");
+				out.println("<div class=\"command-info-user\">");
+				out.println("<h3>" + command.getuAccount() + "</h3>");
+				out.println("<p>" + command.getuCommandTime() +"</p>");
+				out.println("</div>");
+				out.println("</div>");
+				out.println("<div class=\"command-content\">");
+				out.println("<p>" + command.getuCommandContent() + "</p>");
+				out.println("</div>");
+				out.println("</div>");
+				count++;
+			}
+		%>
+	</div>
+
 	<footer id="footer">
 		<div>
 			<p style="color: black">Copyright © World Traveling All Rights Reserved. </p>
